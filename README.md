@@ -72,10 +72,10 @@ quora_project/
 | Model                      | Validation F1 | Validation Log-Loss | Test F1 | Test Log-Loss |
 |----------------------------|:-------------:|:-------------------:|:-------:|:-------------:|
 | Logistic Regression (TF-IDF) | 0.7135 | 0.4192 | 0.7110 | 0.4262 |
-| XGBoost (TF-IDF)           | 0.7192 | 0.3990 | 0.7231 | 0.4048 |
+| XGBoost (TF-IDF)           | 0.7192 | 0.3990 | 0.7208 | 0.4045 |
 | Logistic Regression (GloVe) | 0.6048 | 0.5163 | 0.6067 | 0.5127 |
-| XGBoost (GloVe)            | 0.7231 | 0.4048 | 0.7231 | 0.4048 |
-| Neural Network (GloVe)    | 0.7721 | 0.3722 | 0.7717 | 0.3720 |
-| BERT Embeddings + NN       | 0.7747 | 0.3139 | 0.7771 | 0.3029 |
+| XGBoost (GloVe)            | 0.7231 | 0.4048 | 0.7249 | 0.4054 |
+| Neural Network (GloVe)    | 0.7721 | 0.3722 | 0.7708 | 0.3760 |
+| BERT Embeddings + NN       | 0.7771 | 0.3910 | 0.7793 | 0.3880 |
 | BERT Fine-tuned            | 0.8650 | 0.3537 | 0.8659 | 0.3515 |
 
