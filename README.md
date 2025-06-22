@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution leverages a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models. The workflow is organized into several Jupyter notebooks, each focusing on a different stage or modeling approach. 
+This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution leverages a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models.
+
+The workflow is organized into several Jupyter notebooks, each focusing on a different stage or modeling approach. The project is modular, with reusable utility scripts and a clear separation between data, models, and code.
 
 ---
 
@@ -12,9 +14,10 @@ This project addresses the problem of detecting whether two questions from Quora
 quora_project/
 │
 ├── 1. EDA_preprocessing_LR_XGBoost.ipynb
-├── 2. GloVe_CBOW_classifier.ipynb
+├── 2. GloVe_NN_classifier.ipynb
 ├── 3. BERT_embeddings.ipynb
 ├── 4. BERT_finetuning.ipynb
+│
 │
 └── utils/
     ├── metrics_utils.py
@@ -37,12 +40,12 @@ quora_project/
   - Trains and evaluates Logistic Regression and XGBoost models on TF-IDF and GloVe features.
   - Prepares data for downstream modeling.
 
-### 2. GloVe_CBOW_classifier.ipynb
-- **Purpose:** Training a neural network classifier (CBOW-style) using GloVe embeddings and engineered features.
+### 2. GloVe_NN_classifier.ipynb
+- **Purpose:** Training a neural network classifier using GloVe embeddings and engineered features.
 - **Key Steps:**
   - Loads precomputed GloVe vectors and engineered features.
   - Splits data into training and validation sets.
-  - Defines and trains a PyTorch neural network (CBOW architecture).
+  - Defines and trains a PyTorch neural network.
   - Evaluates model performance and saves the best model.
 
 ### 3. BERT_embeddings.ipynb
@@ -72,7 +75,7 @@ quora_project/
 | XGBoost (TF-IDF)           | 0.7192 | 0.3990 | 0.7231 | 0.4048 |
 | Logistic Regression (GloVe) | 0.6048 | 0.5163 | 0.6067 | 0.5127 |
 | XGBoost (GloVe)            | 0.7231 | 0.4048 | 0.7231 | 0.4048 |
-| CBOW Neural Net (GloVe)    | 0.7721 | 0.3722 | 0.7717 | 0.3720 |
+| Neural Network (GloVe)    | 0.7721 | 0.3722 | 0.7717 | 0.3720 |
 | BERT Embeddings + NN       | 0.7747 | 0.3139 | 0.7771 | 0.3029 |
 | BERT Fine-tuned            | 0.8650 | 0.3537 | 0.8659 | 0.3515 |
 
