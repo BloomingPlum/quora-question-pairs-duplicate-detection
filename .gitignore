@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+data/
+# Jupyter & VS Code noise
+[200~
+.ipynb_checkpoints/
+.vscode/
+# Large data / embeddings / models
+data/
+models/

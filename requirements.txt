@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+tqdm
+nltk
+spacy
+torch>=1.10
+transformers
+joblib
