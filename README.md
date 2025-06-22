@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution leverages a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models.
-
-The workflow is organized into several Jupyter notebooks, each focusing on a different stage or modeling approach. The project is modular, with reusable utility scripts and a clear separation between data, models, and code.
+This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution leverages a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models. The workflow is organized into several Jupyter notebooks, each focusing on a different stage or modeling approach. 
 
 ---
 
