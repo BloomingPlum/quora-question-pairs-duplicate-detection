@@ -18,21 +18,6 @@ quora_project/
 ├── 3. BERT_embeddings.ipynb
 ├── 4. BERT_finetuning.ipynb
 │
-├── data/
-│   ├── quora_train.csv.zip
-│   ├── quora_test.csv.zip
-│   ├── glove_files/
-│   ├── glove.6B.zip, glove.42B.300d.zip
-│   ├── glove.6B.50d.txt, ...
-│   ├── df_glove.csv, q1_glove.npy, q2_glove.npy, ...
-│   └── (various preprocessed and intermediate files)
-│
-├── models/
-│   ├── bert_best_model.pt
-│   ├── bert_best.pt
-│   ├── CBOW_model.pt
-│   └── best_model.pt
-│
 └── utils/
     ├── metrics_utils.py
     ├── plot_utils.py
