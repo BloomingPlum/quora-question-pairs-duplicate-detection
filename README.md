@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution leverages a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models.
+This project addresses the problem of detecting whether two questions from Quora are semantically equivalent (i.e., duplicates). The solution is a combination of traditional NLP, machine learning, and deep learning techniques, including GloVe embeddings, TF-IDF, classical classifiers, and BERT-based models.
 
 The workflow is organized into several Jupyter notebooks, each focusing on a different stage or modeling approach. The project is modular, with reusable utility scripts and a clear separation between data, models, and code.
 
@@ -18,7 +18,6 @@ quora_project/
 ├── 3. BERT_embeddings.ipynb
 ├── 4. BERT_finetuning.ipynb
 │
-│
 └── utils/
     ├── metrics_utils.py
     ├── plot_utils.py
@@ -32,38 +31,38 @@ quora_project/
 ### 1. EDA_preprocessing_LR_XGBoost.ipynb
 - **Purpose:** Data loading, cleaning, exploratory data analysis (EDA), feature engineering, and baseline modeling with Logistic Regression and XGBoost.
 - **Key Steps:**
-  - Loads and inspects the Quora question pairs dataset.
-  - Handles missing values and explores class distribution.
-  - Analyzes question lengths, special patterns, and word statistics.
-  - Performs text preprocessing using spaCy and NLTK.
-  - Generates features using TF-IDF and GloVe embeddings.
-  - Trains and evaluates Logistic Regression and XGBoost models on TF-IDF and GloVe features.
-  - Prepares data for downstream modeling.
+  - Loading and inspecting the Quora question pairs dataset.
+  - Handling missing values and exploring class distribution.
+  - Analyzing question lengths, special patterns, and word statistics.
+  - Performing text preprocessing using spaCy and NLTK.
+  - Generating features using TF-IDF and GloVe embeddings.
+  - Training and evaluating Logistic Regression and XGBoost models on TF-IDF and GloVe features.
+  - Preparing data for downstream modeling.
 
 ### 2. GloVe_NN_classifier.ipynb
 - **Purpose:** Training a neural network classifier using GloVe embeddings and engineered features.
 - **Key Steps:**
-  - Loads precomputed GloVe vectors and engineered features.
-  - Splits data into training and validation sets.
-  - Defines and trains a PyTorch neural network.
-  - Evaluates model performance and saves the best model.
+  - Loading precomputed GloVe vectors and engineered features.
+  - Splitting data into training and validation sets.
+  - Defining and training a PyTorch neural network.
+  - Evaluating model performance and saving the best model.
 
 ### 3. BERT_embeddings.ipynb
 - **Purpose:** Feature extraction using BERT and training a classifier on top of BERT embeddings.
 - **Key Steps:**
-  - Loads data and splits into train/validation/test.
-  - Extracts sentence embeddings for each question using a pretrained BERT model.
-  - Concatenates, subtracts, and multiplies embeddings to form feature vectors.
-  - Trains a neural network classifier on these features.
-  - Evaluates and visualizes results.
+  - Loading data and splitting into train/validation/test.
+  - Extracting sentence embeddings for each question using a pretrained BERT model.
+  - Concatenating, subtracting, and multiplying embeddings to form feature vectors.
+  - Training a neural network classifier on these features.
+  - Evaluating and visualizing results.
 
 ### 4. BERT_finetuning.ipynb
 - **Purpose:** End-to-end fine-tuning of a BERT model for duplicate question detection.
 - **Key Steps:**
-  - Loads and splits data.
-  - Prepares PyTorch datasets and dataloaders.
-  - Fine-tunes a BERT model using HuggingFace Transformers.
-  - Evaluates and visualizes model performance.
+  - Loading and splitting data.
+  - Preparing PyTorch datasets and dataloaders.
+  - Fine-tuning a BERT model using HuggingFace Transformers.
+  - Evaluating and visualizing model performance.
 
 ---
 
